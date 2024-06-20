@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Bubble";
+    src: url("..//..//assets/Fonts/bubble_pixel-7_dark.ttf");
+}
+.modalBackdrop {
+    font-family: "Bubble";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(39, 100, 39, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button {
+    font-family: "Bubble";
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #fa5fff, #03ffd1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.button:hover {
+    color: black;
+    background: linear-gradient(90deg, #fe00dc, #ff0303);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+h2{
+    background: linear-gradient(90deg, #5fff64, #ff0303);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.buttonX {
+    font-family: "Bubble";
+    padding: 5px 10px;
+    background-color: #ef3030;
+    color: rgb(0, 0, 0);
+    border: 1px solid #a2a5a3;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonX:hover {
+    color: red;
+    background: linear-gradient(90deg, #fe00dc, #ff0303);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.containerX {
+    display: flex;
+    justify-content: right;
+    top: 10px;
+
+}

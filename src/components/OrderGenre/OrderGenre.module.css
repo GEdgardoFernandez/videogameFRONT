@@ -1,0 +1,63 @@
+.containerOrder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: row;
+
+}
+
+.input {
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(246, 16, 16, 0.5);
+    position: relative;
+    font-family: "Bubble";
+    background-color: none;
+    text-shadow: #f21de4 1px 0 10px;
+}
+
+/*radio*/
+
+.radioInputs {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  width: 100%;
+  font-size: 14px;
+  gap: 0.5rem;
+}
+
+.radioInputs .radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.radioInputs .radio input {
+  display: none;
+}
+
+.radioInputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: .5rem 0;
+  color: rgba(0, 0, 0, 0.627);
+  transition: all .15s ease-in-out;
+}
+
+.radioInputs .radio input:checked + .name {
+  background-color: #35fb0d4f;
+  font-weight: 600;
+}
