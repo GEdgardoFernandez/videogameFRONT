@@ -17,7 +17,7 @@ const RUTA_PLATFORMS = 'http://localhost:3001/platforms'
 export function getAllGames() {
   return async function (dispatch) {
     try {
-      const response = await axios.get(`/videogames`)
+      const response = await axios.get(`${RUTA_VIDEOGAMES}`)
       const allVideoGames = response.data
       dispatch({
         type: GET_ALL_GAMES,
@@ -38,7 +38,7 @@ export function getGameID(id) {
   console.log(id)
   return async function (dispatch) {
     try {
-      const response = await axios.get(`/videogames/${id}`)
+      const response = await axios.get(`${RUTA_VIDEOGAMES}/${id}`)
       const videoGameID = response.data
       dispatch({
         type: GET_GAME_ID,
@@ -54,7 +54,7 @@ export function getGameName(name) {
   console.log(name)
   return async function (dispatch) {
     try {
-      const response = await axios.get(`/videogames?name=${name}`);
+      const response = await axios.get(`${RUTA_VIDEOGAMES}?name=${name}`);
       dispatch({
         type: GET_GAME_NAME,
         payload: response.data,
@@ -68,7 +68,7 @@ export function getGameName(name) {
 export function getAllGenres() {
   return async function (dispatch) {
     try {
-      const response = await axios.get(`/genres`);
+      const response = await axios.get(`${RUTA_GENRES}`);
       dispatch({
         type: GET_GENRES,
         payload: response.data,
@@ -80,7 +80,7 @@ export function getAllGenres() {
 export function getAllPlatforms() {
   return async function (dispatch) {
     try {
-      const response = await axios.get(`/platforms`);
+      const response = await axios.get(`${RUTA_PLATFORMS}`);
       dispatch({
         type: GET_PLATFORMS,
         payload: response.data
@@ -93,7 +93,7 @@ export function getAllPlatforms() {
 export function createGame(payload) {
   return async function (dispatch) {
     try {
-      const response = await axios.post(`/videogames`, payload); // Corrige la ruta aquí
+      const response = await axios.post(`${RUTA_VIDEOGAMES}`, payload); // Corrige la ruta aquí
       const videoGame = response.data;
       console.log(videoGame)
       dispatch({
